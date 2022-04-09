@@ -7,16 +7,22 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:usesCleartextTraffic="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TokTak"
+        android:usesCleartextTraffic="true"
         tools:targetApi="m">
+        <activity
+            android:name=".Home"
+            android:exported="false"
+            android:label="@string/title_activity_home" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
         <activity
             android:name=".FullScreenVideo"
             android:exported="false"
-            android:theme="@style/FullScreen"
-            />
+            android:theme="@style/FullScreen" />
         <activity
             android:name=".Register"
             android:exported="false" />

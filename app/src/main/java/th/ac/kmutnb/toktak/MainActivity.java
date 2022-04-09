@@ -17,13 +17,15 @@ public class MainActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
     }
-    public void register(View v){
-        Intent regis = new Intent(this,Register.class);
-        startActivity(regis);
+
+    public void gologin(View v){
+        Intent gologin = new Intent(this,Login.class);
+        startActivity(gologin);
     }
 
-    public void login(View v){
-        Intent login = new Intent(this,FullScreenVideo.class);
-        startActivity(login);
+    public void goReg(View v){
+        Intent goReg = new Intent(this,Register.class);
+        startActivity(goReg);
     }
+
 }
